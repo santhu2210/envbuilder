@@ -12,16 +12,16 @@ Build an env file (.env) from python project
 
 ## Scan a project and make/append .env
 
-` python envbuilder.py <project-full-path>`
+` python envreqs.py <project-full-path>`
 
 ```
-$ python envbuilder.py  'E:\Projects\py-sample-project'
+$ python envreqs.py  'E:\Projects\py-sample-project'
 ```
 
 ## Skip the directory while scan and make .env
 
-` python envbuilder.py <project-full-path> <folder_name_to_skip>`
+` python envreqs.py <project-full-path> <folder_name_to_skip>`
 
 ```
-$ python envbuilder.py  'E:\Projects\py-sample-project'  'resources'
+$ python envreqs.py  'E:\Projects\py-sample-project'  'resources'
 ```

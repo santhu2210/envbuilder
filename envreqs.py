@@ -80,5 +80,6 @@ if __name__ == '__main__':
         else:
             # include all directory in project folder
             build_env(sys.argv[1])
+        print(f"Successfully saved env file in {os.path.join(sys.argv[1], '.env')}")
     else:
         print("Please provide the valid full project path to scan, next to script name")
