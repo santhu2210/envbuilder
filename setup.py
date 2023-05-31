@@ -1,6 +1,9 @@
 from setuptools import setup
 from envreqs import __version__
 
+with open('README.rst') as readme_file:
+    readme = readme_file.read()
+
 setup(
     name='envreqs',
     version=__version__,
@@ -11,6 +14,8 @@ setup(
     license='GNU GENERAL PUBLIC LICENSE',
     packages=['envreqs'],
     install_requires=['docopt'],
+    long_description = readme + '\n',
+    long_description_content_type='text/x-rst',
     entry_points={
         'console_scripts': [
             'envreqs=envreqs.envreqs:main',
